@@ -55,7 +55,7 @@ ROOT_URLCONF = 'studb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['studb/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
