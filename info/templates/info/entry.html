@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+  <h1>Create</h1>
+
+  <form method="POST" action="{% url 'entry' %}" enctype="multipart/form-data">
+  {% csrf_token %}
+  
+  Name:
+  <br />
+  <input type= "text" name="name" />
+  <br>
+  <br>
+  Roll:
+  <br/>
+  <input type= "text" name="roll" />
+  <br/>
+  <br>
+  Department:
+  <br />
+  <input type= "text" name="dept" />
+  <br>
+  <br>
+  Section:
+  <br />
+  <input type= "text" name="section" />
+  <br>
+  <br>
+  Blood:
+  <br />
+  <input type= "text" name="blood" />
+  <br>
+  <br>
+  Image:
+  <br />
+  <input type= "file" name="image" />
+  <br>
+  <br>
+  
+  <input class="btn btn-primary" type="submit" value="Add Product"/>
+  <br>
+  <br>
+  <br>
+  </form>
+  
+</div>
+
+
+
+{% endblock %}
